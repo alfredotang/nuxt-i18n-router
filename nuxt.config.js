@@ -4,7 +4,7 @@ import localizeRouter from './nuxt-modules/localize-router'
 /** @type {import('@nuxt/types')} */
 export default {
   env: {
-    DEFAULT_SUBDOMAIN: process.env.DEFAULT_SUBDOMAIN,
+    DEFAULT_COUNTRY: process.env.DEFAULT_COUNTRY,
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

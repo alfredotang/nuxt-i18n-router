@@ -1,12 +1,12 @@
 import config from '~/server/config/domain.json'
 
-const defaultSubdomain = process.env.DEFAULT_SUBDOMAIN
+const defaultCountry = process.env.DEFAULT_COUNTRY
 
-const defaultLocale = config[defaultSubdomain].locale
+const defaultLocale = config[defaultCountry].locale
 
 export const state = () => ({
   locale: defaultLocale,
-  subdomain: defaultSubdomain,
+  subdomain: defaultCountry,
   defaultLocale: defaultLocale,
 })
 
