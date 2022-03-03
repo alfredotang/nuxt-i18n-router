@@ -1,4 +1,6 @@
-# nuxt-i18n-router
+# nuxt-i18n-router 
+
+subpath demo 
 
 ## Build Setup
 
@@ -8,62 +10,67 @@ $ yarn install
 
 # serve with hot reload at localhost:3000
 $ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## reset default locale
+如果要模擬不同的國家，可以到 `.env` 裡面，把 `DEFAULT_SUBDOMAIN` 修改成你要的國家
 
-## Special Directories
+```
+// <root>.env
+DEFAULT_COUNTRY=uk
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+```
 
-### `assets`
+## localize router 
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+source code 在 `nuxt-modules/localize-router/index.js`
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+需要注意的是，原本我們就會在 nuxt config 裡面去設定 alias route
+為了將 alias route 也套用多語言 subpath
 
-### `components`
+```
+// nuxt.config.js
+ export default {
+   router: {
+    prefetchLinks: false,
+    middleware: ['setting'],
+    extendRoutes(routes, resolve) {
+      const aliasRoutes = [
+        {
+          name: 'custom-route',
+          path: '/a/:tag/:campaign?',
+          component: resolve(__dirname, 'pages/xxx/xxx.vue'),
+        },
+      ]
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+      routes.push(...aliasRoutes)
+      sortRoutes(routes)
+    },
+  }
+ }
+```
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+需要改成
 
-### `layouts`
+```
+// nuxt.config.js
+import { resolve } from 'path'
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+export default {
+  router: {
+    prefetchLinks: false,
+    middleware: ['setting']
+  },
+  aliasRoutes: [
+    {
+      name: 'custom-route',
+      path: '/a/:tag/:campaign?',
+      component: resolve(__dirname, 'pages/xxx/xxx.vue'),
+    },
+  ]
+}
+```
+1. 移除 `router.extendRoutes`
+2. `import { resolve } from 'path'`
+3. 將 `aliasRoutes` 搬到外層，給 `nuxt-modules/localize-router` 使用
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
