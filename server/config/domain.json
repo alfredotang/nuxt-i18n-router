@@ -1,0 +1,283 @@
+{
+  "en": {
+    "name": "English",
+    "subdomain": "en",
+    "fallbackSubdomain": "en",
+    "locale": "en",
+    "fallbackLocales": [],
+    "currency": "USD",
+    "native": "english",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "uk": {
+    "name": "English (United Kingdom)",
+    "subdomain": "uk",
+    "fallbackSubdomain": "en",
+    "locale": "en-GB",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "GBP",
+    "native": "english",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "ca": {
+    "name": "English (Canada)",
+    "subdomain": "ca",
+    "fallbackSubdomain": "en",
+    "locale": "en-CA",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "CAD",
+    "native": "english",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "au": {
+    "name": "English (Australia)",
+    "subdomain": "au",
+    "fallbackSubdomain": "en",
+    "locale": "en-AU",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "AUD",
+    "native": "english",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "tw": {
+    "name": "繁體中文 (台灣)",
+    "subdomain": "tw",
+    "fallbackSubdomain": "en",
+    "locale": "zh-TW",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "TWD",
+    "native": "chinese",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "hk": {
+    "name": "繁體中文 (香港)",
+    "subdomain": "hk",
+    "fallbackSubdomain": "tw",
+    "locale": "zh-HK",
+    "fallbackLocales": [
+      "zh-TW",
+      "en"
+    ],
+    "currency": "HKD",
+    "native": "chinese",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "cn": {
+    "name": "简体中文 (中国)",
+    "subdomain": "cn",
+    "fallbackSubdomain": "tw",
+    "locale": "zh-CN",
+    "fallbackLocales": [
+      "zh-TW",
+      "en"
+    ],
+    "currency": "CNY",
+    "native": "chinese",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "jp": {
+    "name": "日本語",
+    "subdomain": "jp",
+    "fallbackSubdomain": "en",
+    "locale": "ja",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "JPY",
+    "native": "japanese",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "fr": {
+    "name": "Français",
+    "subdomain": "fr",
+    "fallbackSubdomain": "en",
+    "locale": "fr",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "EUR",
+    "native": "french",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "be": {
+    "name": "Français (Belgique)",
+    "subdomain": "be",
+    "fallbackSubdomain": "fr",
+    "locale": "fr-BE",
+    "fallbackLocales": [
+      "fr",
+      "en"
+    ],
+    "currency": "EUR",
+    "native": "french",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "ch": {
+    "name": "Français (La Suisse)",
+    "subdomain": "ch",
+    "fallbackSubdomain": "fr",
+    "locale": "fr-CH",
+    "fallbackLocales": [
+      "fr",
+      "en"
+    ],
+    "currency": "CHF",
+    "native": "french",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "kr": {
+    "name": "한국어",
+    "subdomain": "kr",
+    "fallbackSubdomain": "en",
+    "locale": "ko",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "KRW",
+    "native": "korean",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "es": {
+    "name": "Español",
+    "subdomain": "es",
+    "fallbackSubdomain": "en",
+    "locale": "es",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "EUR",
+    "native": "spanish",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "mx": {
+    "name": "Español (México)",
+    "subdomain": "mx",
+    "fallbackSubdomain": "es",
+    "locale": "es-MX",
+    "fallbackLocales": [
+      "es",
+      "en"
+    ],
+    "currency": "MXN",
+    "native": "spanish",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "cl": {
+    "name": "Español (Chile)",
+    "subdomain": "cl",
+    "fallbackSubdomain": "es",
+    "locale": "es-CL",
+    "fallbackLocales": [
+      "es",
+      "en"
+    ],
+    "currency": "CLP",
+    "native": "spanish",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "ar": {
+    "name": "Español (Argentina)",
+    "subdomain": "ar",
+    "fallbackSubdomain": "es",
+    "locale": "es-AR",
+    "fallbackLocales": [
+      "es",
+      "en"
+    ],
+    "currency": "ARS",
+    "native": "spanish",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "co": {
+    "name": "Español (Colombia)",
+    "subdomain": "co",
+    "fallbackSubdomain": "es",
+    "locale": "es-CO",
+    "fallbackLocales": [
+      "es",
+      "en"
+    ],
+    "currency": "COP",
+    "native": "spanish",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "pe": {
+    "name": "Español (Perú)",
+    "subdomain": "pe",
+    "fallbackSubdomain": "es",
+    "locale": "es-PE",
+    "fallbackLocales": [
+      "es",
+      "en"
+    ],
+    "currency": "PEN",
+    "native": "spanish",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "cr": {
+    "name": "Español (Costa Rica)",
+    "subdomain": "cr",
+    "fallbackSubdomain": "es",
+    "locale": "es-CR",
+    "fallbackLocales": [
+      "es",
+      "en"
+    ],
+    "currency": "CRC",
+    "native": "spanish",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": false
+  },
+  "pt": {
+    "name": "Português",
+    "subdomain": "pt",
+    "fallbackSubdomain": "en",
+    "locale": "pt",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "EUR",
+    "native": "portuguese",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  },
+  "th": {
+    "name": "ภาษาไทย",
+    "subdomain": "th",
+    "fallbackSubdomain": "en",
+    "locale": "th",
+    "fallbackLocales": [
+      "en"
+    ],
+    "currency": "THB",
+    "native": "thai",
+    "tutorsPageCitiesSectionVisible": true,
+    "isMainSubdomain": true
+  }
+}
